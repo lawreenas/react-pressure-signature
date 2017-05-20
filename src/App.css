@@ -27,8 +27,8 @@
 .m-signature-pad--body
 canvas {
     border: 1px;
-    width: 1500px;
-    height: 800px;
+    width: 1000px;
+    height: 500px;
     border-radius: 4px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;
   }

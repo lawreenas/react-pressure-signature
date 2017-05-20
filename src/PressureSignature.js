@@ -36,7 +36,6 @@ class PressureSignature extends SignaturePad  {
    }
 
   registerPressure(value, e) {
-    console.log('Pressure ->', value);
     this.setState({ currentPressure: value });
   }
 
