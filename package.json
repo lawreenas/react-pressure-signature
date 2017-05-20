@@ -9,6 +9,7 @@
     "pressure": "^2.1.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-sparklines": "^1.6.0",
     "signature_pad": "^2.1.1"
   },
   "scripts": {
