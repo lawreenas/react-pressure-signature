@@ -10,8 +10,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-signature-pad": "0.0.6",
-    "react-sparklines": "^1.6.0",
-    "signature_pad": "^2.1.1"
+    "react-sparklines": "^1.6.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
 import PressureSignature from './PressureSignature';
@@ -22,8 +22,8 @@ class App extends Component {
   }
 
 
-  save(data) {
-    console.log(data);
+  save() {
+    console.log(this.state.signatureData);
     this.setState({ db: [this.state.signatureData, ...this.state.db], signatureData: [] });
 
     var signature = this.refs.signature;
@@ -64,7 +64,7 @@ class App extends Component {
        </div>
         <div className="row" >
           <div className="col-xs-6">
-            {this.state.pressure}
+            Current pressure: {this.state.pressure}
           </div>
           <div className="col-xs-6">
             <input className="btn btn-primary" type="button" onClick={this.save} value="Save" />
@@ -83,9 +83,7 @@ class App extends Component {
           </div>
         </div>
          { renderStats(this.state.signatureData)}
-         {
-           this.state.db.map(entry => renderStats(entry))
-         }
+         { this.state.db.map(entry => renderStats(entry)) }
       </div>
     );
   }
