@@ -8,13 +8,13 @@ class PressureSignature extends SignaturePad  {
   constructor(props) {
     super(props);
 
-    this.maxWidth = this.props.maxWidth || 1.5;
-
     this.registerPressure = this.registerPressure.bind(this);
     this.unsupportedPressure = this.unsupportedPressure.bind(this);
 
+    // Callbacks
     this.onChangeCallback = this.props.onChange;
 
+    // State
     this.state = {
       ...this.state,
       currentPressure: 0, // current pressure
@@ -27,8 +27,9 @@ class PressureSignature extends SignaturePad  {
   }
 
   componentDidMount() {
-    // Read pressure from canvas
     super.componentDidMount();
+
+    // Read pressure from canvas
     Pressure.set(
       this.refs.cv,
       this.state.pressureConfig,
@@ -44,23 +45,24 @@ class PressureSignature extends SignaturePad  {
   }
 
   _addPoint(point) {
-    this.onChangeCallback(
-        {
-          x: point.x,
-          y: point.y,
-          time: point.time,
-          pressure: this.state.currentPressure
-        }
-    );
+    const p = {
+      x: point.x,
+      y: point.y,
+      time: point.time,
+      pressure: this.state.currentPressure
+    };
+    this.onChangeCallback(p);
+    // this.setState({ signatureData: [...this.state.signatureData, p] });
+
     super._addPoint(point);
   }
 
   render() {
     return (
       <div id="signature-pad" className="m-signature-pad">
-        <div className="m-signature-pad--body">
-          <canvas ref="cv"></canvas>
-        </div>
+        <canvas
+          style={{ height: '400px', width: '100%', ...this.props.style }}
+          ref="cv"></canvas>
       </div>);
   }
 };
