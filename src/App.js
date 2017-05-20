@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
-import './App.css';
-
 import PressureSignature from './PressureSignature';
-
 import Stats from './Stats';
 
 class App extends Component {
@@ -23,12 +20,13 @@ class App extends Component {
 
 
   save() {
-    console.log(this.state.signatureData);
-    this.setState({ db: [this.state.signatureData, ...this.state.db], signatureData: [] });
+    this.setState({
+      db: [this.state.signatureData, ...this.state.db],
+      signatureData: []
+    });
 
     var signature = this.refs.signature;
     signature.clear();
-    // erase();
   }
 
   export() {
