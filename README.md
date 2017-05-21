@@ -1,8 +1,12 @@
-## React Pressure-sensitive Signature pad
+# React Pressure-sensitive Signature pad
 
-An extension of (react-signature-pad)[https://github.com/blackjk3/react-signature-pad] to record (Pressure)[https://github.com/stuyam/pressure] data when signing.
+An extension of [react-signature-pad](https://github.com/blackjk3/react-signature-pad) to record [Pressure](https://github.com/stuyam/pressure) data when signing.
 
-# Modifications from react-signature-pad
+## Modifications from react-signature-pad
 
 - Ability to pass callback function which will get called when point is registered. This gives ability to act according to real time data.
 - No more need to include provided styles sheets. Uses ```style``` property if you need to style it.
+
+## Basic usage
+
+Todo
