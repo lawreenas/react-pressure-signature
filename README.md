@@ -8,13 +8,14 @@ An extension of [react-signature-pad](https://github.com/blackjk3/react-signatur
 - No more need to include provided styles sheets. Uses ```style``` property if you need to style it.
 
 ## Run
-** Install **
+
+**Install**
 ``` npm install ``` or ```yarn install```
 
-** Run **
+**Run**
 ```npm start``` or ```yarn start```
 
-** Test **
+**Test**
 [http://localhost:3000](http://localhost:3000)
 
 
