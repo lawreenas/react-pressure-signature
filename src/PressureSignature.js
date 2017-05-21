@@ -15,7 +15,7 @@ class PressureSignature extends SignaturePad  {
 
     // State
     this.state = {
-      ...this.state,
+        ...this.state,
       currentPressure: 0, // current pressure
       signatureData: [], // current signature data
       pressureConfig: { // PressureJS config
@@ -33,7 +33,7 @@ class PressureSignature extends SignaturePad  {
       this.refs.cv,
       this.state.pressureConfig,
       { polyfill: false });
-   }
+  }
 
   registerPressure(value, e) {
     this.setState({ currentPressure: value });
@@ -58,10 +58,11 @@ class PressureSignature extends SignaturePad  {
 
   render() {
     return (
-      <div id="signature-pad" className="m-signature-pad">
+      <div id="pressure-signature-pad" className="pressure-signature-pad">
         <canvas
           style={{ height: '400px', width: '100%', ...this.props.style }}
-          ref="cv"></canvas>
+          ref="cv">
+        </canvas>
       </div>);
   }
 };
