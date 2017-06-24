@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import SignaturePad from './SignaturePad';
+import PressureSignaturePad from './PressureSignaturePad';
 import Stats from './Stats';
 
 class App extends Component {
@@ -54,7 +54,7 @@ class App extends Component {
     return (
       <div className="App">
        <div className="row" >
-        <SignaturePad 
+        <PressureSignaturePad 
             onChange={this.addPoint}
             ref="signature" />
        </div>
