@@ -2,7 +2,7 @@
 
 # React Pressure-sensitive Signature pad
 
-A React Signature component to record signature bio metric data: `x`, `y`, `time` and `pressure`. This component is a marrage between [signature-pad](https://github.com/szimek/signature_pad) by [szimek](https://github.com/szimek) and [Pressure](https://github.com/stuyam/pressure) by (https://github.com/stuyam)[https://github.com/stuyam].
+A React Signature component to record signature bio metric data: `x`, `y`, `time` and `pressure`. This component is a marrage between [signature-pad](https://github.com/szimek/signature_pad) by [Szymon Nowak](https://github.com/szimek) and [Pressure](https://github.com/stuyam/pressure) by [Stuart Yamartino](https://github.com/stuyam).
 
 ## Demo
 
