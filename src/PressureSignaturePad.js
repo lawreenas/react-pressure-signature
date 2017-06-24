@@ -25,7 +25,9 @@ class PressureSignaturePad extends React.Component {
 
     // Callbacks
     this.callbacks = {
-      onChange: this.props.onChange
+      onChange: (point) =>  {
+        if (typeof this.props.onChange === 'function') this.props.onChange(point);
+      }
     } 
   }
 
