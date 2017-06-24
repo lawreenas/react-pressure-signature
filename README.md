@@ -5,7 +5,7 @@ A React component, extending [signature-pad](https://github.com/szimek/signature
 ## Demo
 
 [Demo](https://lawreenas.github.io/react-pressure-signature/). Works both on desktop and mobile devices, records both rouch and pen pressure when available.
-You can checkout demo application [source code](https://github.com/lawreenas/react-pressure-signature/blob/example/src/App.js)
+You can checkout demo application [source code](https://github.com/lawreenas/react-pressure-signature/blob/master/src/App.js)
 
 ## Install
 
@@ -28,7 +28,7 @@ React.render(
   document.body
 )
 ```
-You can checkout demo application [source code](https://github.com/lawreenas/react-pressure-signature/blob/example/src/App.js)
+You can checkout demo application [source code](https://github.com/lawreenas/react-pressure-signature/blob/master/src/App.js)
 
 ## APIs
 
