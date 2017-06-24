@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Pressure from 'pressure';
 import SignaturePad from 'signature_pad/dist/signature_pad.js';
 
-class PressureSignaturePad extends Component {
+class PressureSignaturePad extends React.Component {
 
   constructor(props) {
     super(props);

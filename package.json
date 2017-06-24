@@ -15,7 +15,7 @@
     "type": "git",
     "url": "https://github.com/lawreenas/react-pressure-signature.git"
   },
-  "main": "dist/main.js",
+  "main": "lib/index.js",
   "devDependencies": {
     "autoprefixer": "7.1.0",
     "babel-cli": "^6.24.1",
@@ -71,6 +71,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "lib": "babel src/node_modules --out-dir lib --copy-files",
     "test": "node scripts/test.js --env=jsdom"
   },
   "devServer": {
