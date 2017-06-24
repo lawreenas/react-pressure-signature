@@ -9,7 +9,7 @@ class App extends Component {
     super(props);
     this.state = {
       signatureData: [], // current signature data
-      db:[], // database of signature data
+      db: [], // database of signature data
     }
 
     this.save = this.save.bind(this);
@@ -24,6 +24,7 @@ class App extends Component {
     });
 
     var signature = this.refs.signature;
+    console.log('signature.toData()', signature.toData());
     signature.clear();
   }
 
@@ -39,47 +40,55 @@ class App extends Component {
   render() {
     const renderStats = (data) => (
       <div className="row">
-        <div className="col-xs-4">
-          <Stats color="teal" data={data.map(i => i.pressure)} />
+        <div className="col-4">
+          <Stats color="#0275d8" data={data.map(i => i.pressure)} />
         </div>
-        <div className="col-xs-4">
-          <Stats color="blue" data={data.map(i => i.x)} />
+        <div className="col-4">
+          <Stats color="#0275d8" data={data.map(i => i.x)} />
         </div>
-        <div className="col-xs-4">
-          <Stats color="purple" data={data.map(i => i.y)} />
+        <div className="col-4">
+          <Stats color="#0275d8" data={data.map(i => i.y)} />
         </div>
       </div>
     );
 
     return (
-      <div className="App">
-       <div className="row" >
-        <PressureSignaturePad 
+      <div className="App container-fluid">
+        <div className="row align-items-center">
+          <h1>React Pressure Signature Pad</h1>
+        </div>
+        <div className="row" >
+          <div className="col-12">
+          <PressureSignaturePad
+            style={{ height: '300px' }}
             onChange={this.addPoint}
             ref="signature" />
-       </div>
-        <div className="row" >
-          <div className="col-xs-6">
-           
-          </div>
-          <div className="col-xs-6">
-            <input className="btn btn-primary" type="button" onClick={this.save} value="Save" />
-            <input className="btn btn-primary" type="button" onClick={this.export} value="Export" />
           </div>
         </div>
         <div className="row">
-          <div className="col-xs-4">
-            Pressure
-          </div>
-          <div className="col-xs-4">
-            X coordinate
-          </div>
-          <div className="col-xs-4">
-            Y coordinate
+          <div className="col-12">
+            <div style={{ textAlign: 'center' }}>
+              <input className="btn btn-sm btn-outline-primary" type="button" onClick={this.save} value="Save data" />
+              <input className="btn btn-sm btn-outline-primary" style={{ marginLeft: '5px' }} type="button" onClick={this.export} value="Export image" />
+            </div>
           </div>
         </div>
-         { renderStats(this.state.signatureData)}
-         { this.state.db.map(entry => renderStats(entry)) }
+        <div className="row">
+          <hr />
+        </div>
+        <div className="row">
+          <div className="col-4">
+            <h5>Pressure</h5>
+          </div>
+          <div className="col-4">
+            <h5>X coordinate</h5>
+          </div>
+          <div className="col-4">
+            <h5>Y coordinate</h5>
+          </div>
+        </div>
+        {renderStats(this.state.signatureData)}
+        {this.state.db.map(entry => renderStats(entry))}
       </div>
     );
   }

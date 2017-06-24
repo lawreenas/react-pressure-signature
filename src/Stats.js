@@ -1,12 +1,14 @@
 import React from 'react';
-import { Sparklines, SparklinesLine } from 'react-sparklines';
+import { Sparklines, SparklinesLine, SparklinesSpots, SparklinesNormalBand } from 'react-sparklines';
 
 
 export default (props) => {
+  const color = props.color;
   return (
     <div>
-      <Sparklines height={80} width={800} data={props.data}>
-        <SparklinesLine color={props.color} />
+      <Sparklines data={props.data} width={800} height={80}>
+        <SparklinesLine style={{ stroke: color, strokeWidth: 4, fill: "none" }} />
+        <SparklinesSpots size={7} spotColors={{ '-1': color, '0': color, '1': color }} />
       </Sparklines>
     </div>
   );

@@ -1,6 +1,4 @@
-[![npm version](https://badge.fury.io/js/react-pressure-signature.svg)](https://badge.fury.io/js/react-pressure-signature)
-
-# React Pressure-Sensitive Signature Pad
+# React Pressure-Sensitive Signature Pad [![npm version](https://badge.fury.io/js/react-pressure-signature.svg)](https://badge.fury.io/js/react-pressure-signature)
 
 A React Signature component to record signature bio metric data: `x`, `y`, `time` and `pressure`. This component is a marrage between [signature-pad](https://github.com/szimek/signature_pad) by [Szymon Nowak](https://github.com/szimek) and [Pressure](https://github.com/stuyam/pressure) by [Stuart Yamartino](https://github.com/stuyam).
 
