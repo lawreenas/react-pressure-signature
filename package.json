@@ -1,6 +1,6 @@
 {
   "name": "react-pressure-signature",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "author": "Laurynas Remeika",
   "license": "MIT",
   "keywords": [
@@ -52,9 +52,12 @@
     "postcss-flexbugs-fixes": "3.0.0",
     "postcss-loader": "2.0.5",
     "promise": "7.1.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
     "react-dev-utils": "^1.0.0",
     "react-error-overlay": "^1.0.0",
     "style-loader": "0.17.0",
+    "react-sparklines": "^1.6.0",
     "sw-precache-webpack-plugin": "0.9.1",
     "url-loader": "0.5.8",
     "webpack": "2.5.1",
@@ -62,11 +65,12 @@
     "webpack-manifest-plugin": "1.1.0",
     "whatwg-fetch": "2.0.3"
   },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
   "dependencies": {
     "pressure": "^2.1.1",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-sparklines": "^1.6.0",
     "signature_pad": "^2.2.0"
   },
   "scripts": {
