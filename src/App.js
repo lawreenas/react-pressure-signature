@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import PressureSignature from './PressureSignature';
+import SignaturePad from './SignaturePad';
 import Stats from './Stats';
 
 class App extends Component {
@@ -8,7 +8,6 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pressure: 0, // current pressure
       signatureData: [], // current signature data
       db:[], // database of signature data
     }
@@ -17,7 +16,6 @@ class App extends Component {
     this.export = this.export.bind(this);
     this.addPoint = this.addPoint.bind(this);
   }
-
 
   save() {
     this.setState({
@@ -56,13 +54,13 @@ class App extends Component {
     return (
       <div className="App">
        <div className="row" >
-         <PressureSignature
-          onChange={this.addPoint}
-          ref="signature" />
+        <SignaturePad 
+            onChange={this.addPoint}
+            ref="signature" />
        </div>
         <div className="row" >
           <div className="col-xs-6">
-            Current pressure: {this.state.pressure}
+           
           </div>
           <div className="col-xs-6">
             <input className="btn btn-primary" type="button" onClick={this.save} value="Save" />

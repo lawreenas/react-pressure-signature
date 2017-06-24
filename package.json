@@ -1,7 +1,21 @@
 {
   "name": "react-pressure-signature",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "author": "Laurynas Remeika",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "react-component",
+    "pressure",
+    "signature",
+    "component",
+    "ui"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lawreenas/react-pressure-signature.git"
+  },
+  "main": "dist/main.js",
   "devDependencies": {
     "react-scripts": "1.0.0"
   },
@@ -9,8 +23,8 @@
     "pressure": "^2.1.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-signature-pad": "0.0.6",
-    "react-sparklines": "^1.6.0"
+    "react-sparklines": "^1.6.0",
+    "signature_pad": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
