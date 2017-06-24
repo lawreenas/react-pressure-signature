@@ -15,16 +15,16 @@
     "type": "git",
     "url": "https://github.com/lawreenas/react-pressure-signature.git"
   },
+  "homepage" : "http://lawreenas.github.io/react-pressure-signature",
   "main": "dist/main.js",
   "devDependencies": {
     "react-scripts": "1.0.0"
   },
   "dependencies": {
-    "pressure": "^2.1.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-sparklines": "^1.6.0",
-    "signature_pad": "^2.2.0"
+    "react-pressure-signature": "^0.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

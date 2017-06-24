@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import SignaturePad from './SignaturePad';
+import SignaturePad from 'react-pressure-signature';
 import Stats from './Stats';
 
 class App extends Component {
