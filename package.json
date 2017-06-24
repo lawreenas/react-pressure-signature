@@ -1,6 +1,6 @@
 {
   "name": "react-pressure-signature",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Laurynas Remeika",
   "license": "MIT",
   "keywords": [
@@ -15,6 +15,7 @@
     "type": "git",
     "url": "https://github.com/lawreenas/react-pressure-signature.git"
   },
+  "homepage": "http://lawreenas.github.io/react-pressure-signature",
   "main": "lib/src/PressureSignaturePad.js",
   "devDependencies": {
     "autoprefixer": "7.1.0",
