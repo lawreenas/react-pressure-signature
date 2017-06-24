@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/react-pressure-signature.svg)](https://badge.fury.io/js/react-pressure-signature)
+
 # React Pressure-sensitive Signature pad
 
 A React component, extending [signature-pad](https://github.com/szimek/signature_pad) with [Pressure](https://github.com/stuyam/pressure) data when signing.
